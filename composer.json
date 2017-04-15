@@ -1,0 +1,8 @@
+{
+    "require": {
+        "joshtronic/php-googleplaces": "dev-master",
+        "pimax/fb-messenger-php": "dev-master",
+        "ktamas77/firebase-php": "dev-master"
+
+    }
+}
