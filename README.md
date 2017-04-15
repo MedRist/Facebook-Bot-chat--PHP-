@@ -23,7 +23,7 @@ The preferred installation is via composer. First add the following to your comp
     }
 }
 ```
-### Setting DataBase
+### Setting the DataBase
   As we know already, Facebook doesn't keep a session open with the webhook.
   So we can use "session per request" scope TODO.
   For my case i chose to store the users data in a real time database "Firebase". In order
@@ -32,7 +32,7 @@ The preferred installation is via composer. First add the following to your comp
  In addition to this, the first interaction with bot, we'll ask the user to give us his location/o a location in general,
  then we store it for the first time.
  For Devloppers Setting the database:
- * After you create your Firebase database, define an Entity "User" with 4 attributes
+ * After you create your Firebase database, define an Entity "User" with 5 attributes
  * id     : User ID
  * Lat    : For the latitude
  * Lan    : For the longitude
@@ -52,6 +52,10 @@ The preferred installation is via composer. First add the following to your comp
 }
 
  ```
+ ### Setting the config file "config.php".
+ the config file require to define your apps' access token and token
+ ### Link
+
 Stay in Messenger and do everything :D Dont leave it ;) 
 [NearMyLocation](http://m.me/NearMyLocation)
  
