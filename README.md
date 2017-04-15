@@ -52,6 +52,6 @@ The preferred installation is via composer. First add the following to your comp
 }
 
  ```
-
-[Contribution guidelines for this project](http://m.me/NearMyLocation)
+Stay in Messenger and do everything :D Dont leave it ;) 
+[NearMyLocation](http://m.me/NearMyLocation)
  
