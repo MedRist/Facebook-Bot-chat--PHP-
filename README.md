@@ -23,6 +23,35 @@ The preferred installation is via composer. First add the following to your comp
     }
 }
 ```
+### Setting DataBase
+As we know already, Facebook doesn't keep a session open with the webhook.
+ * So we can use "session per request" scope TODO.
+ * For my case i chose to store the users data in a real time database "Firebase". In order
+ * To avoid asking them every time to define the location, furthermore we have to provide them the choice
+ * to change it every moment they want.
+ * In addition to this, the first interaction with bot, we'll ask the user to give us his location/o a location in general,
+ * then we store it for the first time.
+ For Devloppers :
+ * After you create your Firebase database, define an Entity "User" with 4 attributes
+ * id: User ID
+ * Lat    :For the latitude
+ * Lan    :For the longitude
+ * time   :to store the last query's time
+ * command: to store the last command asked by the user.
+ ```
+ {
+  "users" : {
+
+    "user_id :<Facebook id >" : {
+      "command" : "<last Command>",
+      "lan" : "longitude",
+      "lat" : "latitude",
+      "time" : "date"
+    }
+  }
+}
+
+ ```
 
 
  
