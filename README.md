@@ -8,5 +8,21 @@ Our Bot chat is very helpful and easy to use, using the latest components and to
 and facilitating the user Experience, where we included Menus and Buttons ....
 in order to give the user a full understanding to use it.
 So to Get started Just share your location and send your interest in the menu,
- If you need Help or if you want to change your location , feel free to send "help" 
+ If you need Help or if you want to change your location , feel free to send "help".
+ 
+ ### Installing
+The preferred installation is via composer. First add the following to your composer.json.
+
+```
+{
+    "require": {
+        "joshtronic/php-googleplaces": "dev-master",
+        "pimax/fb-messenger-php": "dev-master",
+        "ktamas77/firebase-php": "dev-master"
+
+    }
+}
+```
+
+
  
