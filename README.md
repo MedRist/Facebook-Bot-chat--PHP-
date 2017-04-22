@@ -2,13 +2,7 @@
 Facebook-Bot-chat -NearBy-
 ## Getting Started
 NearBy is a Facebook Bot Chat helper.
-If you Are looking around for the closest places to your location, and without leaving 
-the messenger. We can Do it For you Just Stay in messenger then we will take care of that.
-Our Bot chat is very helpful and easy to use, using the latest components and tools developed by FACEBOOK 
-and facilitating the user Experience, where we included Menus and Buttons ....
-in order to give the user a full understanding to use it.
-So to Get started Just share your location and send your interest in the menu,
- If you need Help or if you want to change your location , feel free to send "help".
+So if you are looking around for the closest places to your location, and without leaving the messenger. We can Do it For you Just Stay in messenger then we will take care of that.Our Bot chat is very helpful and easy to use, we are using the latest components and tools developed by FACEBOOK and facilitating the user Experience, where we included Menus and Buttons .... in order to give the user a full understanding to use it. So to Get started just share your location and send your interest presented in the menu, If you need Help or if you want to change your location, feel free to send "help" and ask for more interests by sending "more".
  
  ### Installing
 The preferred installation is via composer. First add the following to your composer.json.
@@ -25,10 +19,7 @@ The preferred installation is via composer. First add the following to your comp
 ```
 ### Setting the DataBase
   As we know already, Facebook doesn't keep a session open with the webhook.
-  So we can use "session per request" scope TODO.
-  For my case i chose to store the users data in a real time database "Firebase". In order
- To avoid asking them every time to define the location, furthermore we have to provide them the choice
- to change it in every moment they want.
+  So we can use "session per request" scope TODO. For my case i chose to store the users data in a real time database "Firebase". in order to avoid asking them every time to define the location. Furthermore we have to provide them the choice to change it in every moment they want.
  In addition to this, the first interaction with bot, we'll ask the user to give us his location/o a location in general,
  then we store it for the first time.
  For Devloppers Setting the database:
