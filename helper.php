@@ -5,7 +5,7 @@ use pimax\Messages\MessageButton;
 
 
 function getResults($lat,$lan,$type){
-    $google_places = new joshtronic\GooglePlaces('AIzaSyCi28bcGvwHqD4Y74_rP1Fu3egN_qW4rNU');
+    $google_places = new joshtronic\GooglePlaces('');
     $google_places->location = array($lat, $lan);
     $google_places->types    = $type;     // Requires keyword, name or types
     $google_places->rankby   = 'distance';// we chose to search by distance
