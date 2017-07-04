@@ -20,7 +20,7 @@ require('vendor/autoload.php');
  function insert_new_user($id,$lat,$lan,$t)
 {
 
-    $url="https://botchat-643d1.firebaseio.com";
+    $url="";
     $firebase = new \Firebase\FirebaseLib($url);
     $result=$firebase->set("/users/$id",["lat"=>$lat,"lan"=>$lan,"time"=>$t,"command"=>""]);
     return true;
@@ -30,7 +30,7 @@ require('vendor/autoload.php');
 function set_last_command($id,$command)
 {
 
-    $url="https://botchat-643d1.firebaseio.com";
+    $url="";
     $firebase = new \Firebase\FirebaseLib($url);
     $result=$firebase->update("/users/$id",["command"=>$command]);
     return true;
@@ -39,7 +39,7 @@ function set_last_command($id,$command)
 function get_user($id)
 {
 
-    $url="https://botchat-643d1.firebaseio.com";
+    $url="";
     $firebase = new \Firebase\FirebaseLib($url);
     $result=$firebase->get("/users/$id");
     if ($result != "null")
@@ -49,7 +49,7 @@ function get_user($id)
 function get_lat($id)
 {
 
-    $url="https://botchat-643d1.firebaseio.com";
+    $url="";
     $firebase = new \Firebase\FirebaseLib($url);
     $result=$firebase->get("/users/$id");
     if ($result != "null")
@@ -60,7 +60,7 @@ function get_lat($id)
 function get_lang($id)
 {
 
-    $url="https://botchat-643d1.firebaseio.com";
+    $url="";
     $firebase = new \Firebase\FirebaseLib($url);
     $result=$firebase->get("/users/$id");
     if ($result != "null")
